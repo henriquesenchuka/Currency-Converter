@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <img src="/P2/PROJETO/assets/money.gif" alt="Coin GIF" class="gif">
+    <div class="container-main">
+        <label for="convert-from" id="convert-from-label">Convert <b>From</b> <br>
+            <select id="convert-from">
+                <option>
+                    R$ Real Brasileiro
+                </option>
+            </select>
+        </label>
+        <br>
+        <label for="convert-for" id="convert-for-label">Convert <b>For</b> <br>
+            <select id="convert-for">
+                <option>
+                    US$ USA Dollar
+                </option>
+                <option>
+                    € Euro
+                </option>
+                <option>
+                    £ Libra
+                </option>
+                <option>
+                    BitCoin
+                </option>
+            </select>
+        </label>
+        <br>
+        <label for="value" id="amount-label"> <b>Amount</b> <br>
+            <input type="text" id="amount" placeholder=" R$ 10.000,00">
+        </label>
+        <br>
+        <button class="convert">Convert</button>
+        
+        <div class="conversion">
+            <div class="from-amount">
+                    <img src="./assets/real.png" alt="Brazil Flag" class="from-amount-img">
+                    <p class="from-amount-p">R$ 10.000,00</p>
+            </div>
+            <img src="./assets/arrow.png" alt="arrow" class="arrow">
+            <div class="for-amount">
+                    <img src="./assets/dollar.png" alt="USA Flag" class="for-amount-img">
+                    <p class="for-amount-p">US$ 2.000,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
