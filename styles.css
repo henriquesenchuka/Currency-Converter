@@ -109,6 +109,9 @@ body {
     padding-left: 5px;
 }
 
+#amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 #amount.placeholder {
     font-weight: 700;
