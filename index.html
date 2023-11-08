@@ -13,31 +13,46 @@
     <div class="container-main">
         <label for="convert-from" id="convert-from-label">Convert <b>From</b> <br>
             <select id="convert-from">
-                <option>
+                <option value="real">
                     R$ Real Brasileiro
                 </option>
-            </select>
-        </label>
-        <br>
-        <label for="convert-for" id="convert-for-label">Convert <b>For</b> <br>
-            <select id="convert-for">
-                <option>
+                <option value="dollar">
                     US$ USA Dollar
                 </option>
-                <option>
+                <option value="euro">
                     € Euro
                 </option>
-                <option>
+                <option value="libra">
                     £ Libra
                 </option>
-                <option>
+                <option value="bc">
                     BitCoin
                 </option>
             </select>
         </label>
         <br>
+        <label for="convert-for" id="convert-for-label">Convert <b>To</b> <br>
+            <select id="convert-for">
+                <option value="dollar">
+                    US$ USA Dollar
+                </option>
+                <option value="euro">
+                    € Euro
+                </option>
+                <option value="libra">
+                    £ Libra
+                </option>
+                <option value="bc">
+                    BitCoin
+                </option>
+                <option value="real">
+                    R$ Real Brasileiro
+                </option>
+            </select>
+        </label>
+        <br>
         <label for="amount" id="amount-label"> <b>Amount</b> <br>
-            <input type="number" id="amount" placeholder="R$ 10.000,00">
+            <input type="number" id="amount" placeholder="Ex: 10000.00">
         </label>
         <br>
         <button class="convert-button">Convert</button>
