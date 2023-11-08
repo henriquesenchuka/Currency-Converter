@@ -7,14 +7,14 @@ const convertButton = document.querySelector(".convert-button")
 
 
 function convertAmount() {
-    const amountValue = document.querySelector("#amount").value
+    const amountValue = document.querySelector("#amount").value // Amount Input Value
     const convertFromParagraph = document.querySelector(".from-amount-p")
     const convertForParagraph = document.querySelector(".for-amount-p")
 
     const convertedValue = amountValue / dollarToday
 
-    convertFromParagraph.innerHTML = amountValue
-    convertForParagraph.innerHTML = convertedValue
+    convertFromParagraph.innerHTML = new Intl.NumberFormat("pt-BR", {style: "currency", currency: "BRL"}).format(amountValue)
+    convertForParagraph.innerHTML = new Intl.NumberFormat("en", {style: "currency", currency: "USD"}).format(convertedValue)
 }
 
 
