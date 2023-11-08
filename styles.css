@@ -50,6 +50,8 @@ body {
     line-height: 18px;
     font-size: 16px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    appearance: none;
+    padding-left: 5px;
 }
 
 
@@ -74,6 +76,8 @@ body {
     line-height: 18px;
     font-size: 16px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    appearance: none;
+    padding-left: 5px;
 }
 
 
@@ -99,6 +103,7 @@ body {
     font-weight: 700;
     line-height: 18px;
     font-size: 16px;
+    padding-left: 5px;
 }
 
 
