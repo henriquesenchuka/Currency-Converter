@@ -1,9 +1,22 @@
-const valueReal = 0
-const valueDollar = 0
-const valueEuro = 0
-const valueLibra = 0
-const valueBitcoin = 0
+const dollarToday = 4.89
+const libraToday = 6.01
+const euroToday = 5.24
+const bitCoinToday = 173000.93
 
-function convertClick(){
-    alert("Deu certo!")
+const convertButton = document.querySelector(".convert-button")
+
+
+function convertAmount() {
+    const amountValue = document.querySelector("#amount").value
+    const convertFromParagraph = document.querySelector(".from-amount-p")
+    const convertForParagraph = document.querySelector(".for-amount-p")
+
+    const convertedValue = amountValue / dollarToday
+
+    convertFromParagraph.innerHTML = amountValue
+    convertForParagraph.innerHTML = convertedValue
 }
+
+
+convertButton.addEventListener("click", convertAmount)
+
