@@ -16,16 +16,19 @@ body {
 .gif {
     width: 180px;
     height: 195px;
-    margin: auto;
+    margin-left: 45vw;
     display: block;
+    position: relative;
 }
 
 .container-main {
     width: 375px;
     height: 712px;
-    margin: auto;
+    margin-left: 40vw;
     background-color: #FFFFFF;
     border-radius: 20px;
+    position: fixed;
+    display: block;
 }
 
 
