@@ -118,7 +118,7 @@ body {
 
 
 
-.convert {
+.convert-button {
     color: #FFFFFF;
     background-color: #1c3feb;
     border-radius: 5px;
@@ -136,13 +136,13 @@ body {
     cursor: pointer;
 }
 
-.convert:hover {
+.convert-button:hover {
     width: 339px;
     height: 52px;
     margin-left: 19px;
 }
 
-.convert:active {
+.convert-button:active {
     opacity: .5;
 }
 
