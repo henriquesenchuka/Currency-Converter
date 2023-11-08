@@ -23,12 +23,15 @@ function changeImageFrom() {
     }
     if(currencySelectFrom.value == "dollar"){
         convertFromImage.src = './assets/dollar.png'
+        convertFromParagraph.innerHTML = new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"}).format(0)
     }
     if(currencySelectFrom.value == "libra"){
         convertFromImage.src = './assets/libra.png'
+        convertFromParagraph.innerHTML = new Intl.NumberFormat("uk-UK", {style: "currency", currency: "GBP"}).format(0)
     }
     if(currencySelectFrom.value == "bc"){
         convertFromImage.src = './assets/bitcoin.png'
+        convertFromParagraph.innerHTML = new Intl.NumberFormat("en-US", {style: "currency", currency: "BTC"}).format(0)
     }
 }
 
@@ -43,12 +46,15 @@ function changeImageFor() {
     }
     if(currencySelectFor.value == "dollar"){
         convertForImage.src = './assets/dollar.png'
+        convertForParagraph.innerHTML = new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"}).format(0)
     }
     if(currencySelectFor.value == "libra"){
         convertForImage.src = './assets/libra.png'
+        convertForParagraph.innerHTML = new Intl.NumberFormat("uk-UK", {style: "currency", currency: "GBP"}).format(0)
     }
     if(currencySelectFor.value == "bc"){
         convertForImage.src = './assets/bitcoin.png'
+        convertForParagraph.innerHTML = new Intl.NumberFormat("en-US", {style: "currency", currency: "BTC"}).format(0)
     }
 }
 
